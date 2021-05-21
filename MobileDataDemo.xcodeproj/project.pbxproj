@@ -8,14 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		9BFA3FC0E20E9BED0FC06A8A /* Pods_MobileDataDemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EC78A7871F8FCECC132EF40 /* Pods_MobileDataDemoTests.framework */; };
+		D9762B132657449F0033D234 /* BaseBean.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9762B112657449F0033D234 /* BaseBean.swift */; };
+		D9762B142657449F0033D234 /* HMURLRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9762B122657449F0033D234 /* HMURLRequest.swift */; };
 		D97D56A8265732C80010AC78 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D97D56A7265732C80010AC78 /* AppDelegate.swift */; };
 		D97D56AA265732C80010AC78 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D97D56A9265732C80010AC78 /* SceneDelegate.swift */; };
 		D97D56AC265732C80010AC78 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D97D56AB265732C80010AC78 /* ViewController.swift */; };
 		D97D56AF265732C80010AC78 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D97D56AD265732C80010AC78 /* Main.storyboard */; };
 		D97D56B1265732CA0010AC78 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D97D56B0265732CA0010AC78 /* Assets.xcassets */; };
 		D97D56B4265732CA0010AC78 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D97D56B2265732CA0010AC78 /* LaunchScreen.storyboard */; };
-		D97D56BF265732CA0010AC78 /* MobileDataDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D97D56BE265732CA0010AC78 /* MobileDataDemoTests.swift */; };
-		D97D56CA265732CA0010AC78 /* MobileDataDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D97D56C9265732CA0010AC78 /* MobileDataDemoUITests.swift */; };
+		D97D56DE265747E60010AC78 /* response.json in Resources */ = {isa = PBXBuildFile; fileRef = D97D56DD265747E60010AC78 /* response.json */; };
+		D97D56E12657490B0010AC78 /* ViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D97D56E02657490B0010AC78 /* ViewControllerTests.swift */; };
+		D97D56E22657498B0010AC78 /* BaseBean.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9762B112657449F0033D234 /* BaseBean.swift */; };
+		D97D56E3265759F80010AC78 /* response.json in Resources */ = {isa = PBXBuildFile; fileRef = D97D56DD265747E60010AC78 /* response.json */; };
+		D97D56E626575E2A0010AC78 /* HMURLRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9762B122657449F0033D234 /* HMURLRequest.swift */; };
+		D97D56E92657766F0010AC78 /* BaseBeanTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D97D56E72657766F0010AC78 /* BaseBeanTests.swift */; };
+		D97D56EA2657766F0010AC78 /* HttpRequestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D97D56E82657766F0010AC78 /* HttpRequestTests.swift */; };
 		E9552A8495B869A12D84940D /* Pods_MobileDataDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A7AE818E798AA4755B8B52B /* Pods_MobileDataDemo.framework */; };
 /* End PBXBuildFile section */
 
@@ -42,6 +49,8 @@
 		7A7AE818E798AA4755B8B52B /* Pods_MobileDataDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MobileDataDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		944201B3FF09EDCE01160EF9 /* Pods-MobileDataDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobileDataDemoTests.release.xcconfig"; path = "Target Support Files/Pods-MobileDataDemoTests/Pods-MobileDataDemoTests.release.xcconfig"; sourceTree = "<group>"; };
 		C52346614126D7595FA7BEEA /* Pods-MobileDataDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobileDataDemo.release.xcconfig"; path = "Target Support Files/Pods-MobileDataDemo/Pods-MobileDataDemo.release.xcconfig"; sourceTree = "<group>"; };
+		D9762B112657449F0033D234 /* BaseBean.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseBean.swift; sourceTree = "<group>"; };
+		D9762B122657449F0033D234 /* HMURLRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HMURLRequest.swift; sourceTree = "<group>"; };
 		D97D56A4265732C80010AC78 /* MobileDataDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MobileDataDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D97D56A7265732C80010AC78 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D97D56A9265732C80010AC78 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -51,12 +60,15 @@
 		D97D56B3265732CA0010AC78 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D97D56B5265732CA0010AC78 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D97D56BA265732CA0010AC78 /* MobileDataDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MobileDataDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		D97D56BE265732CA0010AC78 /* MobileDataDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileDataDemoTests.swift; sourceTree = "<group>"; };
 		D97D56C0265732CA0010AC78 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D97D56C5265732CA0010AC78 /* MobileDataDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MobileDataDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		D97D56C9265732CA0010AC78 /* MobileDataDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileDataDemoUITests.swift; sourceTree = "<group>"; };
 		D97D56CB265732CA0010AC78 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D97D56D726573A8F0010AC78 /* MobileDataDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MobileDataDemo-Bridging-Header.h"; sourceTree = "<group>"; };
+		D97D56DD265747E60010AC78 /* response.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = response.json; sourceTree = "<group>"; };
+		D97D56DF2657490A0010AC78 /* MobileDataDemoUITests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MobileDataDemoUITests-Bridging-Header.h"; sourceTree = "<group>"; };
+		D97D56E02657490B0010AC78 /* ViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerTests.swift; sourceTree = "<group>"; };
+		D97D56E72657766F0010AC78 /* BaseBeanTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseBeanTests.swift; sourceTree = "<group>"; };
+		D97D56E82657766F0010AC78 /* HttpRequestTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpRequestTests.swift; sourceTree = "<group>"; };
 		F8976B320F27AD35E22B7235 /* Pods-MobileDataDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobileDataDemo.debug.xcconfig"; path = "Target Support Files/Pods-MobileDataDemo/Pods-MobileDataDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -96,6 +108,39 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		D9762B0D265744610033D234 /* class */ = {
+			isa = PBXGroup;
+			children = (
+				D9762B0E2657446E0033D234 /* com */,
+			);
+			path = class;
+			sourceTree = "<group>";
+		};
+		D9762B0E2657446E0033D234 /* com */ = {
+			isa = PBXGroup;
+			children = (
+				D9762B0F265744730033D234 /* core */,
+			);
+			path = com;
+			sourceTree = "<group>";
+		};
+		D9762B0F265744730033D234 /* core */ = {
+			isa = PBXGroup;
+			children = (
+				D9762B102657447C0033D234 /* networking */,
+			);
+			path = core;
+			sourceTree = "<group>";
+		};
+		D9762B102657447C0033D234 /* networking */ = {
+			isa = PBXGroup;
+			children = (
+				D9762B112657449F0033D234 /* BaseBean.swift */,
+				D9762B122657449F0033D234 /* HMURLRequest.swift */,
+			);
+			path = networking;
+			sourceTree = "<group>";
+		};
 		D97D569B265732C80010AC78 = {
 			isa = PBXGroup;
 			children = (
@@ -122,6 +167,7 @@
 		D97D56A6265732C80010AC78 /* MobileDataDemo */ = {
 			isa = PBXGroup;
 			children = (
+				D9762B0D265744610033D234 /* class */,
 				D97D56A7265732C80010AC78 /* AppDelegate.swift */,
 				D97D56A9265732C80010AC78 /* SceneDelegate.swift */,
 				D97D56AB265732C80010AC78 /* ViewController.swift */,
@@ -136,7 +182,9 @@
 		D97D56BD265732CA0010AC78 /* MobileDataDemoTests */ = {
 			isa = PBXGroup;
 			children = (
-				D97D56BE265732CA0010AC78 /* MobileDataDemoTests.swift */,
+				D97D56E72657766F0010AC78 /* BaseBeanTests.swift */,
+				D97D56E82657766F0010AC78 /* HttpRequestTests.swift */,
+				D97D56DD265747E60010AC78 /* response.json */,
 				D97D56C0265732CA0010AC78 /* Info.plist */,
 			);
 			path = MobileDataDemoTests;
@@ -145,8 +193,9 @@
 		D97D56C8265732CA0010AC78 /* MobileDataDemoUITests */ = {
 			isa = PBXGroup;
 			children = (
-				D97D56C9265732CA0010AC78 /* MobileDataDemoUITests.swift */,
 				D97D56CB265732CA0010AC78 /* Info.plist */,
+				D97D56E02657490B0010AC78 /* ViewControllerTests.swift */,
+				D97D56DF2657490A0010AC78 /* MobileDataDemoUITests-Bridging-Header.h */,
 			);
 			path = MobileDataDemoUITests;
 			sourceTree = "<group>";
@@ -242,6 +291,7 @@
 					};
 					D97D56C4265732CA0010AC78 = {
 						CreatedOnToolsVersion = 11.5;
+						LastSwiftMigration = 1150;
 						TestTargetID = D97D56A3265732C80010AC78;
 					};
 				};
@@ -271,6 +321,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D97D56E3265759F80010AC78 /* response.json in Resources */,
 				D97D56B4265732CA0010AC78 /* LaunchScreen.storyboard in Resources */,
 				D97D56B1265732CA0010AC78 /* Assets.xcassets in Resources */,
 				D97D56AF265732C80010AC78 /* Main.storyboard in Resources */,
@@ -281,6 +332,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D97D56DE265747E60010AC78 /* response.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -381,7 +433,9 @@
 			files = (
 				D97D56AC265732C80010AC78 /* ViewController.swift in Sources */,
 				D97D56A8265732C80010AC78 /* AppDelegate.swift in Sources */,
+				D9762B132657449F0033D234 /* BaseBean.swift in Sources */,
 				D97D56AA265732C80010AC78 /* SceneDelegate.swift in Sources */,
+				D9762B142657449F0033D234 /* HMURLRequest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -389,7 +443,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D97D56BF265732CA0010AC78 /* MobileDataDemoTests.swift in Sources */,
+				D97D56E92657766F0010AC78 /* BaseBeanTests.swift in Sources */,
+				D97D56EA2657766F0010AC78 /* HttpRequestTests.swift in Sources */,
+				D97D56E22657498B0010AC78 /* BaseBean.swift in Sources */,
+				D97D56E626575E2A0010AC78 /* HMURLRequest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -397,7 +454,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D97D56CA265732CA0010AC78 /* MobileDataDemoUITests.swift in Sources */,
+				D97D56E12657490B0010AC78 /* ViewControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -639,6 +696,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = MobileDataDemoUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -648,6 +706,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.jhm.MobileDataDemoUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MobileDataDemoUITests/MobileDataDemoUITests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = MobileDataDemo;
@@ -658,6 +718,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = MobileDataDemoUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -667,6 +728,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.jhm.MobileDataDemoUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MobileDataDemoUITests/MobileDataDemoUITests-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = MobileDataDemo;
