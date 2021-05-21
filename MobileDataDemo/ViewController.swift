@@ -9,7 +9,8 @@ import SwiftyJSON
 import UIKit
 
 
-class ViewController: UIViewController {
+class ViewController: UIViewController,YearConsumptionCellDelegate {
+
     var dataSource:[YearDataModel]?
     var tableView:UITableView?
     
@@ -22,6 +23,14 @@ class ViewController: UIViewController {
         self.setupUI()
         self.initDataSource()
         // Do any additional setup after loading the view.
+    }
+    
+    func onViewConsumption(model: YearDataModel) {
+        let str = "\(model.year) \n descend"
+        let alert = UIAlertController(title: "", message: str, preferredStyle: .alert)
+        let okAction = UIAlertAction(title: "OK", style: .default, handler: nil)
+        alert.addAction(okAction)
+        self.present(alert, animated: true, completion: nil)
     }
     
     //初始化数据源
@@ -99,10 +108,8 @@ extension ViewController:UITableViewDelegate, UITableViewDataSource {
         let model = self.dataSource?[indexPath.row]
         if (model != nil) {
             let cell = tableView.dequeueReusableCell(withIdentifier:"YearConsumptionCell" , for: indexPath) as! YearConsumptionCell
-            cell.yearLable?.text = model?.year
-            cell.numLabel?.text = "\(model?.mobile_data ?? 0.0)"
-            cell.backgroundColor = (model?.exception)! ? UIColor.red : UIColor .white
-          
+            cell.setModel(model: model!)
+            cell.delegate = self;
             return cell
         }
         return UITableViewCell()
