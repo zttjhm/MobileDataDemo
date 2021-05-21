@@ -48,6 +48,37 @@ class HttpRequestTests: XCTestCase {
         self.wait(for: [exception], timeout: 12)
     }
     
+    func testRequestBody() throws {
+       
+        let param = ["resource_id":"a807b7ab-6cad-4aa6-87d0-e283a7353a0f","limit":"120"]
+        let testReq = HMURLRequest<Bean>("https://data.gov.sg/api/action/datastore_xxsearch",param,.POST,10)
+        testReq.startWithSuccess(success: { (bean) in
+           
+        }, fail: { (any) in
+               
+        }) { (error) in
+                
+        }
+              
+    }
+    
+    func testError() throws {
+        let exception = XCTestExpectation(description: "超时")
+        let testReq = HMURLRequest<Bean>("http://xxdkx.1sxi2.com/aa.html", [:])
+        testReq.startWithSuccess(success: { (bean) in
+            exception.fulfill()
+            XCTAssertTrue(false)
+        }, fail: { (any) in
+            exception.fulfill()
+            XCTAssertTrue(false)
+        }) { (error) in
+            exception.fulfill()
+            XCTAssertTrue(true)
+        }
+        
+        self.wait(for: [exception], timeout: 30)
+    }
+    
     func testFailBlock() throws {
        
         let exception = XCTestExpectation(description: "超时")

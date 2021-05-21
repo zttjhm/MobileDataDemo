@@ -2,7 +2,7 @@
   "help": "https://data.gov.sg/api/3/action/help_show?name=datastore_search",
   "success": true,
   "result": {
-    "resource_id": "a807b7ab-6cad-4aa6-87d0-e283a7353a0f",
+    "resource_id": "null",
     "fields": [
       {
         "type": "int4",
@@ -20,7 +20,7 @@
     "records": [
       {
         "volume_of_mobile_data": "0.000384",
-        "quarter": "2004-Q3",
+        "quarter": "null",
         "_id": 1
       },
       {
@@ -214,7 +214,7 @@
         "_id": 39
       },
       {
-        "volume_of_mobile_data": "7.907798",
+        "volume_of_mobile_data": "null",
         "quarter": "2014-Q2",
         "_id": 40
       },

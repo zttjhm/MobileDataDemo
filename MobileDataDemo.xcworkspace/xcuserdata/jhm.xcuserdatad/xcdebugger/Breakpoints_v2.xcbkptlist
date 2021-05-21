@@ -23,22 +23,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "49527D8B-1891-4F44-91EF-EA321D206BF8"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "MobileDataDemoTests/BaseBeanTests.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "106"
-            endingLineNumber = "106"
-            landmarkName = "testResourceInit()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "95DE013B-926C-4B7F-8EFA-332F4AA1AF64"
             shouldBeEnabled = "No"
             ignoreCount = "0"
@@ -87,16 +71,128 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "63D4138E-BF47-444D-9855-E60AEC01D23E"
+            uuid = "850202C7-DBAD-4F99-9EDD-738EAE13966F"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MobileDataDemo/AppDelegate.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "20"
+            endingLineNumber = "20"
+            landmarkName = "AppDelegate"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "DEEE0ABE-AEC1-4413-B046-1F8A763D9310"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MobileDataDemo/class/com/core/networking/HMURLRequest.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "263"
-            endingLineNumber = "263"
-            landmarkName = "createSessionTask(_:)"
+            startingLineNumber = "57"
+            endingLineNumber = "57"
+            landmarkName = "init(_:_:_:_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "DEEE0ABE-AEC1-4413-B046-1F8A763D9310 - a03fd490ad66c0c0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MobileDataDemo.HMURLRequest.init(Swift.String, Swift.Dictionary&lt;Swift.String, Swift.String&gt;, MobileDataDemo.HMURLRequestMethod, Swift.Double) -&gt; MobileDataDemo.HMURLRequest&lt;A&gt;"
+                  moduleName = "MobileDataDemo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jhm/Desktop/Work/MobileDataDemo/MobileDataDemo/class/com/core/networking/HMURLRequest.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "57"
+                  endingLineNumber = "57"
+                  offsetFromSymbolStart = "993">
+               </Location>
+               <Location
+                  uuid = "DEEE0ABE-AEC1-4413-B046-1F8A763D9310 - d3cfbcd1ec83367e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MobileDataDemoTests.HMURLRequest.init(Swift.String, Swift.Dictionary&lt;Swift.String, Swift.String&gt;, MobileDataDemoTests.HMURLRequestMethod, Swift.Double) -&gt; MobileDataDemoTests.HMURLRequest&lt;A&gt;"
+                  moduleName = "MobileDataDemoTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jhm/Desktop/Work/MobileDataDemo/MobileDataDemo/class/com/core/networking/HMURLRequest.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "57"
+                  endingLineNumber = "57"
+                  offsetFromSymbolStart = "993">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "1CBEE8D1-D115-4039-B963-D5D09C14B3ED"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MobileDataDemoTests/HttpRequestTests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "72"
+            endingLineNumber = "72"
+            landmarkName = "testError()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4F2BBAB3-23B2-42DC-917C-6E9495B6DF56"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MobileDataDemoTests/HttpRequestTests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "92"
+            endingLineNumber = "92"
+            landmarkName = "testFailBlock()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E2F56A66-2C51-4782-8336-9BBBAE55A081"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MobileDataDemoTests/HttpRequestTests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "94"
+            endingLineNumber = "94"
+            landmarkName = "testFailBlock()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "7FC25937-9402-4359-AF3C-7B94BDC5DD27"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MobileDataDemoTests/HttpRequestTests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "89"
+            endingLineNumber = "89"
+            landmarkName = "testFailBlock()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

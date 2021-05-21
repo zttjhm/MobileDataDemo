@@ -147,7 +147,8 @@ class HMURLRequest<T:IBean> : NSObject {
     /// - Returns: <#description#>
     func handleRequestResult(_ data: Data?, _ response: URLResponse?, _ error: Error?)->Void {
         if (error != nil) {
-            self.error!(error!)
+            self.error?(error!)
+            return;
         }
         if (response != nil && (response is HTTPURLResponse)) {
             let respon = response as! HTTPURLResponse

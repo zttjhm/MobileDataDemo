@@ -99,7 +99,10 @@ class BaseBeanTests: XCTestCase {
 
     }
     
-    
+    func testBean() throws {
+        let json = self.responseJson
+        XCTAssertNoThrow(Bean(json))
+    }
     func testResourceInit() throws {
         var json = self.responseJson
         var result = json["result"]
