@@ -25,6 +25,15 @@ enum HMResponseSerializerType {
 }
 
 
+enum FailCause {
+    case LogicError
+    case JsonFormatError
+    case ServerError  //
+    case ResponseError
+    
+    
+}
+
 var session:URLSession?
 var config:URLSessionConfiguration?
 
@@ -32,7 +41,7 @@ class HMURLRequest<T:IBean> : NSObject {
        
     
     typealias successBlock = (_ bean:T)->Void
-    typealias failBlock = (_ any:Any?)->Void
+    typealias failBlock = (_ any:Any?,_ cause:FailCause)->Void
     typealias errorBlock = (_ error:Error)->Void
     
    
@@ -147,7 +156,9 @@ class HMURLRequest<T:IBean> : NSObject {
     /// - Returns: <#description#>
     func handleRequestResult(_ data: Data?, _ response: URLResponse?, _ error: Error?)->Void {
         if (error != nil) {
-            self.error?(error!)
+            DispatchQueue.main.sync {
+                self.error?(error!)
+            }
             return;
         }
         if (response != nil && (response is HTTPURLResponse)) {
@@ -164,21 +175,25 @@ class HMURLRequest<T:IBean> : NSObject {
                             
                         } else {
                             DispatchQueue.main.sync {
-                                self.fail?(bean)
+                                self.fail?(bean,.LogicError)
                             }
                         }
                              
+                    } else {
+                        DispatchQueue.main.sync {
+                            self.fail?(data!,.JsonFormatError)
+                        }
                     }
                           
                 }
             } else {
                 DispatchQueue.main.sync {
-                    self.fail?(data!)
+                    self.fail?(data!,.ServerError)
                 }
             }
         } else {
             DispatchQueue.main.sync {
-                self.fail?(data)
+                self.fail?(data,.ResponseError)
             }
         }
         

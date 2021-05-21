@@ -39,12 +39,21 @@ class ViewController: UIViewController,YearConsumptionCellDelegate {
         let testReq = HMURLRequest<Bean>("/api/action/datastore_search",param,.GET)
         testReq.startWithSuccess(success: { (bean) in
             self.handleProcBean(bean: bean)
-        }, fail: { (any) in
-            if (any is Bean) {
-                
-            } else {
+        }, fail: { (any,cause) in
+            var str = ""
+            switch(cause) {
+            case .LogicError:
+                str = "logic error"
+            case .JsonFormatError:
+                str = "serialization json error"
+            case .ResponseError:
+                str = "response nil"
+            case .ServerError:
+                str = "server Error"
                 
             }
+            self.view.makeToast(str)
+         
         }) { (error) in
             self.view.makeToast(error.localizedDescription)
         }

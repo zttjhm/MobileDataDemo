@@ -38,7 +38,7 @@ class HttpRequestTests: XCTestCase {
         testReq.startWithSuccess(success: { (bean) in
                    exception.fulfill()
                    XCTAssertTrue(true)
-        }, fail: { (any) in
+        }, fail: { (any,cause) in
                    exception.fulfill()
                    XCTAssertTrue(false)
         }) { (error) in
@@ -54,7 +54,7 @@ class HttpRequestTests: XCTestCase {
         let testReq = HMURLRequest<Bean>("https://data.gov.sg/api/action/datastore_xxsearch",param,.POST,10)
         testReq.startWithSuccess(success: { (bean) in
            
-        }, fail: { (any) in
+        }, fail: { (any,cause) in
                
         }) { (error) in
                 
@@ -68,7 +68,7 @@ class HttpRequestTests: XCTestCase {
         testReq.startWithSuccess(success: { (bean) in
             exception.fulfill()
             XCTAssertTrue(false)
-        }, fail: { (any) in
+        }, fail: { (any,cause) in
             exception.fulfill()
             XCTAssertTrue(false)
         }) { (error) in
@@ -87,7 +87,7 @@ class HttpRequestTests: XCTestCase {
         testReq.startWithSuccess(success: { (bean) in
             exception.fulfill()
             XCTAssertTrue(false)
-        }, fail: { (any) in
+        }, fail: { (any,cause) in
             exception.fulfill()
             XCTAssertTrue(true)
         }) { (error) in
@@ -103,7 +103,7 @@ class HttpRequestTests: XCTestCase {
         let testReq = HMURLRequest<Bean>("/api/action/datastore_search",param,.GET)
         testReq.startWithSuccess(success: { (bean) in
 
-        }, fail: { (any) in
+        }, fail: { (any,cause) in
 
         }) { (error) in
 
