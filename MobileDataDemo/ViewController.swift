@@ -49,8 +49,8 @@ class ViewController: UIViewController,YearConsumptionCellDelegate {
             case .ResponseError:
                 str = "response nil"
             case .ServerError:
-                str = "server Error"
-                
+                let statusCode = (testReq.task?.response as? HTTPURLResponse)?.statusCode
+                str = "server Error code:\(statusCode!)"
             }
             self.view.makeToast(str)
          
@@ -58,7 +58,7 @@ class ViewController: UIViewController,YearConsumptionCellDelegate {
             self.view.makeToast(error.localizedDescription)
         }
 
-
+       
     }
     
     func handleProcBean(bean:Bean)->Void {
@@ -94,18 +94,31 @@ class ViewController: UIViewController,YearConsumptionCellDelegate {
 
 
     func setupUI()->Void {
+        self.title = "Demo"
         self.tableView = UITableView(frame: self.view.bounds, style: UITableView.Style.plain)
         self.view.addSubview(self.tableView!)
         self.tableView?.register(YearConsumptionCell.self, forCellReuseIdentifier: "YearConsumptionCell")
         self.tableView?.delegate = self;
         self.tableView?.dataSource = self;
         
+        let rightBarButtonItem = UIBarButtonItem(image: UIImage(named: "qingchu"), style: .plain, target: self, action:#selector(onRightItemAction))
+        self.navigationItem.rightBarButtonItem = rightBarButtonItem
     }
 
-   
- 
+   @objc func onRightItemAction()->Void {
+        let controller = UIAlertController(title: "Clear Cache", message: "Are you sure?", preferredStyle: .alert)
+        let ok = UIAlertAction(title: "OK", style: .default) { (act) in
+            URLCache.shared.removeAllCachedResponses() //
+        }
+        let cancel = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
+        controller.addAction(ok)
+        controller.addAction(cancel)
+        self.present(controller, animated: true, completion: nil)
+
+    }
 
 }
+
 
 
 extension ViewController:UITableViewDelegate, UITableViewDataSource {

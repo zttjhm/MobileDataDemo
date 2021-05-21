@@ -25,6 +25,10 @@
 		D97D56EA2657766F0010AC78 /* HttpRequestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D97D56E82657766F0010AC78 /* HttpRequestTests.swift */; };
 		D97D56ED265777470010AC78 /* YearConsumptionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D97D56EC265777470010AC78 /* YearConsumptionCell.swift */; };
 		D97D56EF265777C50010AC78 /* YearDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D97D56EE265777C50010AC78 /* YearDataModel.swift */; };
+		D9A193592657F61300F44FA1 /* VCTestS.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A193582657F61300F44FA1 /* VCTestS.swift */; };
+		D9A1935A2657F64000F44FA1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D97D56AB265732C80010AC78 /* ViewController.swift */; };
+		D9A1935B2657F6EA00F44FA1 /* YearDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D97D56EE265777C50010AC78 /* YearDataModel.swift */; };
+		D9A1935C2657F6EE00F44FA1 /* YearConsumptionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D97D56EC265777470010AC78 /* YearConsumptionCell.swift */; };
 		E9552A8495B869A12D84940D /* Pods_MobileDataDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A7AE818E798AA4755B8B52B /* Pods_MobileDataDemo.framework */; };
 /* End PBXBuildFile section */
 
@@ -72,6 +76,7 @@
 		D97D56E82657766F0010AC78 /* HttpRequestTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpRequestTests.swift; sourceTree = "<group>"; };
 		D97D56EC265777470010AC78 /* YearConsumptionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YearConsumptionCell.swift; sourceTree = "<group>"; };
 		D97D56EE265777C50010AC78 /* YearDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YearDataModel.swift; sourceTree = "<group>"; };
+		D9A193582657F61300F44FA1 /* VCTestS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCTestS.swift; sourceTree = "<group>"; };
 		F8976B320F27AD35E22B7235 /* Pods-MobileDataDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobileDataDemo.debug.xcconfig"; path = "Target Support Files/Pods-MobileDataDemo/Pods-MobileDataDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -190,6 +195,7 @@
 				D97D56E82657766F0010AC78 /* HttpRequestTests.swift */,
 				D97D56DD265747E60010AC78 /* response.json */,
 				D97D56C0265732CA0010AC78 /* Info.plist */,
+				D9A193582657F61300F44FA1 /* VCTestS.swift */,
 			);
 			path = MobileDataDemoTests;
 			sourceTree = "<group>";
@@ -465,9 +471,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D9A1935A2657F64000F44FA1 /* ViewController.swift in Sources */,
 				D97D56E92657766F0010AC78 /* BaseBeanTests.swift in Sources */,
+				D9A193592657F61300F44FA1 /* VCTestS.swift in Sources */,
 				D97D56EA2657766F0010AC78 /* HttpRequestTests.swift in Sources */,
+				D9A1935C2657F6EE00F44FA1 /* YearConsumptionCell.swift in Sources */,
 				D97D56E22657498B0010AC78 /* BaseBean.swift in Sources */,
+				D9A1935B2657F6EA00F44FA1 /* YearDataModel.swift in Sources */,
 				D97D56E626575E2A0010AC78 /* HMURLRequest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

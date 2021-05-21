@@ -109,6 +109,24 @@ class HttpRequestTests: XCTestCase {
 
         }
     }
+    
+    func testResponseSerialType() throws {
+        let testReq = HMURLRequest<Bean>("/api/action/datastore_search",[:],.GET)
+        XCTAssert(testReq.responseSerializerType() == .JSON)
+    }
+    
+    func testGetTask() throws {
+        let testReq = HMURLRequest<Bean>("/api/action/datastore_search",[:],.GET)
+        let task:URLSessionTask? = testReq.task
+        
+        XCTAssertTrue(true)
+    }
+    
+    func testRequestSerialType() throws {
+        let testReq = HMURLRequest<Bean>("/api/action/datastore_search",[:],.GET)
+        XCTAssert(testReq.requestSerializerType() == .HTTP)
+    }
+    
     func testPerformanceExample() throws {
         // This is an example of a performance test case.
         self.measure {

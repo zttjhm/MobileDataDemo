@@ -44,9 +44,6 @@ class HMURLRequest<T:IBean> : NSObject {
     typealias failBlock = (_ any:Any?,_ cause:FailCause)->Void
     typealias errorBlock = (_ error:Error)->Void
     
-   
-  
-    
     private var requestSessionTask:URLSessionDataTask?
     private var relativeUrl:String
     private var timeout:TimeInterval  //超时时间
@@ -55,7 +52,9 @@ class HMURLRequest<T:IBean> : NSObject {
     private var success:successBlock?
     private var fail:failBlock?
     private var error:errorBlock?
-   
+    public var task:URLSessionDataTask? {
+        get {return self.requestSessionTask}
+    }
  
   
     init(_ relativeUrl:String,
@@ -80,6 +79,7 @@ class HMURLRequest<T:IBean> : NSObject {
         
     }
     
+
     /// 服务器返回的数据格式
     /// - Returns: 目前暂时只支持JSON
     func responseSerializerType()->HMResponseSerializerType {
@@ -181,14 +181,14 @@ class HMURLRequest<T:IBean> : NSObject {
                              
                     } else {
                         DispatchQueue.main.sync {
-                            self.fail?(data!,.JsonFormatError)
+                            self.fail?(data,.JsonFormatError)
                         }
                     }
                           
                 }
             } else {
                 DispatchQueue.main.sync {
-                    self.fail?(data!,.ServerError)
+                    self.fail?(data,.ServerError)
                 }
             }
         } else {
@@ -224,7 +224,7 @@ class HMURLRequest<T:IBean> : NSObject {
 
     }
     
-    
+
     /// URLSession单例对象
     /// - Returns: <#description#>
     static func shareSession()->URLSession {
@@ -278,6 +278,8 @@ class HMURLRequest<T:IBean> : NSObject {
         
         return self.requestSessionTask;
     }
+    
+ 
     
     /// <#Description#>
     /// - Returns: <#description#>

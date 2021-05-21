@@ -103,14 +103,12 @@ class BaseBeanTests: XCTestCase {
         let json = self.responseJson
         XCTAssertNoThrow(Bean(json))
     }
+ 
     func testResourceInit() throws {
         var json = self.responseJson
         var result = json["result"]
         XCTAssertNoThrow(try Resource(result))
-        result["limit"] = "nil"
-        result["resource_id"] = "nil"
-        result["records"] = "nil"
-        result["total"] = "nil"
+       
         
         XCTAssertNoThrow(try Resource(result))
         
