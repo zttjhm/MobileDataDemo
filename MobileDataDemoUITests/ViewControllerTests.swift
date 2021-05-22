@@ -26,9 +26,14 @@ class ViewControllerTests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
     func testClearCache() throws {
+        
         let app = XCUIApplication()
-        app.navigationBars["Demo"].children(matching: .button).element.tap()
-        app.alerts["Clear Cache"].scrollViews.otherElements.buttons["OK"]/*@START_MENU_TOKEN@*/.press(forDuration: 0.6);/*[[".tap()",".press(forDuration: 0.6);"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/
+        let tablesQuery = app.tables
+        tablesQuery/*@START_MENU_TOKEN@*/.cells.containing(.staticText, identifier:"2011").element/*[[".cells.containing(.staticText, identifier:\"14.638703\").element",".cells.containing(.staticText, identifier:\"2011\").element"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
+        tablesQuery/*@START_MENU_TOKEN@*/.cells.containing(.staticText, identifier:"2011")/*[[".cells.containing(.staticText, identifier:\"14.638703\")",".cells.containing(.staticText, identifier:\"2011\")"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.buttons["down"].tap()
+        app.alerts.scrollViews.otherElements.buttons["OK"].tap()
+    
+        
     }
     
     func testClickData() throws {

@@ -103,8 +103,18 @@ class ViewController: UIViewController,YearConsumptionCellDelegate {
         let img = UIImage(named: "qingchu")!.withRenderingMode(.alwaysOriginal)
         let rightBarButtonItem = UIBarButtonItem(image: img, style: .plain, target: self, action:#selector(onRightItemAction))
         self.navigationItem.rightBarButtonItem = rightBarButtonItem
+        
+        
+        let imgRefresh = UIImage(named: "shuaxin")!.withRenderingMode(.alwaysOriginal)
+        let leftBarItem = UIBarButtonItem(image: imgRefresh, style: .plain, target: self, action:#selector(onLeftItemAction))
+        self.navigationItem.leftBarButtonItem = leftBarItem
     }
-
+    
+   @objc func onLeftItemAction()->Void {
+        self.initDataSource()
+    }
+    
+    
    @objc func onRightItemAction()->Void {
         let controller = UIAlertController(title: "Clear Cache", message: "Are you sure?", preferredStyle: .alert)
         let ok = UIAlertAction(title: "OK", style: .default) { (act) in
