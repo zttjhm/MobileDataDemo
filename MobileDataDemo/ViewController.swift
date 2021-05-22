@@ -100,8 +100,8 @@ class ViewController: UIViewController,YearConsumptionCellDelegate {
         self.tableView?.register(YearConsumptionCell.self, forCellReuseIdentifier: "YearConsumptionCell")
         self.tableView?.delegate = self;
         self.tableView?.dataSource = self;
-        
-        let rightBarButtonItem = UIBarButtonItem(image: UIImage(named: "qingchu"), style: .plain, target: self, action:#selector(onRightItemAction))
+        let img = UIImage(named: "qingchu")!.withRenderingMode(.alwaysOriginal)
+        let rightBarButtonItem = UIBarButtonItem(image: img, style: .plain, target: self, action:#selector(onRightItemAction))
         self.navigationItem.rightBarButtonItem = rightBarButtonItem
     }
 

@@ -36,7 +36,7 @@
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "95DE013B-926C-4B7F-8EFA-332F4AA1AF64 - 7dd2f1c51c5ac21b"
+                  uuid = "95DE013B-926C-4B7F-8EFA-332F4AA1AF64 - 41fcae0c084b5c71"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -51,7 +51,7 @@
                   offsetFromSymbolStart = "177">
                </Location>
                <Location
-                  uuid = "95DE013B-926C-4B7F-8EFA-332F4AA1AF64 - 34d2626903e092f3"
+                  uuid = "95DE013B-926C-4B7F-8EFA-332F4AA1AF64 - 8fc3da017f10c99"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -80,8 +80,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "23"
             endingLineNumber = "23"
-            landmarkName = "AppDelegate"
-            landmarkType = "3">
+            landmarkName = "unknown"
+            landmarkType = "0">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -100,7 +100,7 @@
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "DEEE0ABE-AEC1-4413-B046-1F8A763D9310 - a03fd490ad66c0c0"
+                  uuid = "DEEE0ABE-AEC1-4413-B046-1F8A763D9310 - ea3e9ec8ac21883b"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -115,7 +115,7 @@
                   offsetFromSymbolStart = "993">
                </Location>
                <Location
-                  uuid = "DEEE0ABE-AEC1-4413-B046-1F8A763D9310 - d3cfbcd1ec83367e"
+                  uuid = "DEEE0ABE-AEC1-4413-B046-1F8A763D9310 - 99cef689edc47e85"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -145,6 +145,38 @@
             startingLineNumber = "72"
             endingLineNumber = "72"
             landmarkName = "testError()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "ACB9EF7C-4647-4A6B-A211-D8ABFC79F62A"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MobileDataDemoTests/VCTestS.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "34"
+            endingLineNumber = "34"
+            landmarkName = "unknown"
+            landmarkType = "0">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "71A7E5E5-50E0-4734-BFA6-D48E8098E693"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MobileDataDemoUITests/ViewControllerTests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "46"
+            endingLineNumber = "46"
+            landmarkName = "testExample()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
